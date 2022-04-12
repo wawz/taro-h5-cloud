@@ -6,12 +6,12 @@ import './app.scss'
 
 import { ENDID } from '@constants/cloud'
 
-// HTTP.init({
-//   baseURL: BASE_URL,
-//   getToken: () => {
-//     return Taro.getStorageSync('LOCAL_USER')?.api_token
-//   },
-// })
+HTTP.init({
+  baseURL: BASE_URL,
+  getToken: () => {
+    return Taro.getStorageSync('LOCAL_USER')?.api_token
+  },
+})
 
 function App(props) {
   const { login } = useContext(UserContext)
