@@ -1,0 +1,85 @@
+.index {
+	padding: 0px 0;
+	.wrap {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		.icon {
+			margin: 5px;
+			padding: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			border-radius: 1px;
+		}
+	}
+	.action-wrap {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 80px;
+		background: #fff;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		.icon {
+			color: rgba(0, 0, 0, 0.7);
+			margin: 2px;
+			padding: 2px;
+			border: none;
+			box-shadow: rgba(0, 0, 0, 0.35) 0px -3px 5px -3px inset;
+			box-sizing: border-box;
+		}
+		.active {
+			font-weight: 700;
+		}
+	}
+	.editor,
+	.rich-text {
+		width: 360px;
+		height: 450px;
+		padding: 16px;
+		margin: 0 auto 10px;
+		box-sizing: border-box;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+	.rich-text {
+		border-color: #3092ff;
+	}
+	.title {
+		font-size: 14px;
+		text-align: center;
+	}
+	.ext-img {
+		max-width: 80%;
+	}
+	.hidden {
+		display: none;
+	}
+	.info {
+		font-size: 14px;
+		text-indent: 24px;
+		margin-bottom: 10px;
+		.tips {
+			margin-bottom: 0;
+			line-height: 1.4;
+		}
+	}
+	.submit-btn {
+		color: rgb(241, 46, 46);
+		box-shadow: rgb(241, 46, 46) 0px 2px 5px 0px;
+		border-radius: 12px;
+		background: transparent;
+		padding: 10px 20px;
+		margin: 10px auto;
+		width: 120px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		line-height: unset;
+		&::after {
+			display: none;
+		}
+	}
+}

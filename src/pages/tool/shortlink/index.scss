@@ -1,0 +1,33 @@
+.qrcode-index {
+	padding: 16px;
+	.cont-wrap {
+		.namt-btn {
+			border: 1px #808080 solid;
+			border-radius: 4px;
+			padding: 15px;
+			margin-bottom: 20px;
+			position: relative;
+			display: flex;
+			line-height: unset;
+			justify-content: center;
+			&::after {
+				content: none;
+			}
+		}
+		.title {
+			font-size: 16px;
+			line-height: 1.4;
+			margin: 10px auto;
+		}
+		.link-cont {
+			word-break: break-all;
+			.link-title {
+				margin-bottom: 10px;
+			}
+			.copy-text {
+				color: #eb3d0d;
+				margin-left: 20px;
+			}
+		}
+	}
+}
