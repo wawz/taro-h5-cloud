@@ -1,0 +1,53 @@
+.calendar-grid {
+	padding-bottom: 20px;
+
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	&__cell {
+		position: relative;
+		flex-basis: calc(100% / 7) !important;
+		overflow: hidden !important;
+		box-sizing: border-box !important;
+
+		&.center {
+			border-top: var(--gridWidth) solid var(--gridColor);
+			border-right: var(--gridWidth) solid var(--gridColor);
+
+			&:nth-child(7n) {
+				border-right: none;
+			}
+
+			&:nth-child(-n+7) {
+				border-top: none;
+			}
+		}
+
+		&.all-in {
+			border-bottom: var(--gridWidth) solid var(--gridColor);
+			border-left: var(--gridWidth) solid var(--gridColor);
+
+			&:nth-child(7n) {
+				border-right: var(--gridWidth) solid var(--gridColor);
+			}
+
+			&:nth-child(-n+7) {
+				border-top: var(--gridWidth) solid var(--gridColor);
+			}
+		}
+
+		&.bottom {
+			border-bottom: var(--gridWidth) solid var(--gridColor);
+			border-right: var(--gridWidth) solid var(--gridColor);
+
+			&:nth-child(7n) {
+				border-right: none;
+			}
+		}
+
+		.default-date {
+			text-align: center;
+		}
+	}
+}

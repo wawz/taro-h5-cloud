@@ -1,0 +1,30 @@
+.header {
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.page {
+	padding: 20px;
+	position: relative;
+}
+.page-with-tab {
+	padding-bottom: calc(env(safe-area-inset-bottom) + 100px);
+}
+
+button {
+	position: relative;
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+	box-sizing: border-box;
+	font-size: unset;
+	text-align: center;
+	text-decoration: none;
+	line-height: 2.5;
+	border-radius: 0px;
+	-webkit-tap-highlight-color: transparent;
+	overflow: hidden;
+	color: #000;
+}
+

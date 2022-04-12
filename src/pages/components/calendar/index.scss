@@ -1,0 +1,37 @@
+.calendar-page {
+	&__calendar-block {
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.date-item {
+			text-align: center;
+			line-height: 40px;
+			color: #888;
+			opacity: 0.5;
+			&.isWeekEnd {
+				color: red;
+			}
+			&.isCurrentMonth {
+				opacity: 1;
+				color: #000;
+			}
+			&.isCurrentMonth.isWed {
+				opacity: 1;
+				color: #f0f;
+			}
+
+			&.isCurrentMonth.isWeekEnd {
+				opacity: 1;
+				color: red;
+			}
+			&.disabled {
+				opacity: 0.5;
+			}
+		}
+	}
+}

@@ -1,0 +1,111 @@
+.qrcode-index {
+	padding: 16px;
+	.tips {
+		color: #f00;
+	}
+	.input-wrapper {
+		margin-bottom: 20px;
+		&__label {
+			color: #888;
+			margin-bottom: 10px;
+		}
+		&__field {
+			padding: 10px;
+			border: 1px solid #000;
+			border-radius: 4px;
+			&.error {
+				border-color: #f00;
+			}
+		}
+		&__errmsg {
+			color: #f00;
+		}
+	}
+	.radio-wrapper {
+		margin-bottom: 20px;
+		.radio {
+			display: flex;
+			align-items: center;
+			&.active {
+				&::before {
+					content: '';
+					border-radius: 100%;
+					background-color: #000;
+					border: 1px solid #000;
+				}
+			}
+			&::before {
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				margin-right: 10px;
+				content: '';
+				border-radius: 100%;
+				background-color: #fff;
+				border: 1px solid #000;
+			}
+		}
+	}
+	.picker-wrapper {
+		margin-bottom: 20px;
+		&__label {
+			color: #888;
+		}
+		&__cont {
+			border-radius: 8rpx;
+			padding: 10px 0;
+		}
+		&__text {
+			width: 100%;
+			&::after {
+				float: right;
+				content: '>';
+				transform: rotate(90deg);
+			}
+		}
+	}
+	.cont-wrapper {
+		.namt-btn {
+			border: 1px #808080 solid;
+			border-radius: 4px;
+			padding: 15px;
+			margin-bottom: 20px;
+			position: relative;
+			display: flex;
+			line-height: unset;
+			justify-content: center;
+			&::after {
+				content: none;
+			}
+		}
+		.title {
+			font-size: 16px;
+			line-height: 1.4;
+			margin: 10px auto;
+		}
+		.tips {
+			color: #f00;
+		}
+		.img-box {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 10px auto;
+			background: #ff9966; /* fallback for old browsers */
+			background: -webkit-linear-gradient(
+				to right,
+				#ff5e62,
+				#ff9966
+			); /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(
+				to right,
+				#ff5e62,
+				#ff9966
+			); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		}
+		.code-img {
+			width: 300px;
+			height: 300px;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "openapi": [
+      "wxacode.getUnlimited",
+      "shortlink.generate",
+      "ocr.bankcard",
+      "ocr.businessLicense",
+      "ocr.idcard",
+      "ocr.idcard"
+    ]
+  }
+}

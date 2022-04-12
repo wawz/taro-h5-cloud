@@ -1,0 +1,110 @@
+$choosedColor: rgb(240, 31, 31);
+$borderColor: #ccc;
+.ocr-index {
+	.tips {
+		margin-bottom: 20px;
+	}
+	.picker-wrapper {
+		margin-bottom: 20px;
+		&__label {
+			color: #888;
+		}
+		&__cont {
+			border-radius: 8rpx;
+			padding: 10px 0;
+		}
+		&__text {
+			width: 100%;
+			&::after {
+				float: right;
+				content: '>';
+				transform: rotate(90deg);
+			}
+		}
+	}
+	.choose-wrapper {
+		margin-bottom: 20px;
+		line-height: 1.4;
+		&__radio {
+			display: flex;
+			align-items: center;
+			&.active {
+				&::before {
+					content: '';
+					border-radius: 100%;
+					background-color: #000;
+					border: 1px solid #000;
+				}
+			}
+			&::before {
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				margin-right: 10px;
+				content: '';
+				border-radius: 100%;
+				background-color: #fff;
+				border: 1px solid #000;
+			}
+		}
+	}
+	.example-wrapper {
+		&__title {
+			line-height: 1.4;
+			margin-bottom: 20px;
+		}
+		&__flexbox {
+			display: flex;
+			overflow-y: scroll;
+		}
+		.flexbox__cont {
+			padding: 4px;
+			margin: 0 10px 20px;
+			max-width: 200px;
+			border: 1px solid $borderColor;
+			border-radius: 4px;
+			text-align: center;
+			&__label {
+				position: relative;
+				padding: 10px 15px;
+				margin-bottom: 10px;
+				border: 1px solid $borderColor;
+				border-radius: 8px;
+			}
+			&.active {
+				border: 1px solid $choosedColor;
+				.flexbox__cont__label {
+					text-indent: 16px;
+					color: $choosedColor;
+					border: 1px solid $choosedColor;
+				}
+			}
+
+			&__img {
+				max-width: 200px;
+			}
+		}
+	}
+	.photo-wrapper {
+		margin-bottom: 20px;
+		&__title {
+			line-height: 1.4;
+			padding: 10px 15px;
+			margin-bottom: 20px;
+			border: 1px solid $borderColor;
+			border-radius: 8px;
+		}
+		&__img {
+			display: block;
+			max-width: 300px;
+			margin: 10px auto;
+		}
+	}
+	.result-wrapper {
+		margin: 15px 0;
+		&__row {
+			line-height: 1.4;
+			text-indent: 24px;
+		}
+	}
+}

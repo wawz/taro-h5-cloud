@@ -1,0 +1,40 @@
+.cb-list {
+	padding: 5px;
+	.input-wrapper {
+		margin-bottom: 20px;
+		&__label {
+			color: #888;
+		}
+		&__field {
+			padding: 10px;
+			border: 1px solid #000;
+			border-radius: 4px;
+			&.error {
+				border-color: #f00;
+			}
+		}
+		&__errmsg {
+			color: #f00;
+		}
+	}
+	.radio {
+		display: inline-block;
+		&.active {
+			&::before {
+				content: '';
+				border-radius: 100%;
+				background-color: #000;
+				border: 1px solid #000;
+			}
+		}
+		&::before {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			content: '';
+			border-radius: 100%;
+			background-color: #fff;
+			border: 1px solid #000;
+		}
+	}
+}

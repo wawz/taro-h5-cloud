@@ -1,0 +1,9 @@
+page {
+	position: fixed;
+}
+.canvas {
+	top: 0;
+	left: 0;
+	z-index: 999;
+	border: 1px solid #f00;
+}
