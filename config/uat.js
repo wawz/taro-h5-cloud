@@ -9,6 +9,7 @@ export default {
 		NODE_ENV: '"uat"',
 	},
 	defineConstants: {
+		BASE_URL: "'https://rails-template.31ten.cn/api'",
 		//一些根据环境变化的常量，例如各类埋点工具id，订阅消息模板，对应环境的接口地址等
 		//声明后可以在代码中作为全局常量访问
 		//例：注意引号的嵌套
